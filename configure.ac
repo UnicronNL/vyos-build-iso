@@ -26,7 +26,7 @@ test ! "$LB_BOOTAPPEND_INSTALL" && LB_BOOTAPPEND_INSTALL=""
 AC_ARG_VAR(LB_BOOTAPPEND_INSTALL,
 	[empty by default since bypassed with custom config file])
 
-test ! "$LB_BOOTLOADER" && LB_BOOTLOADER=syslinux
+test ! "$LB_BOOTLOADER" && LB_BOOTLOADER=""
 AC_ARG_VAR(LB_BOOTLOADER, [default: syslinux])
 
 test "X$LB_BOOTSTRAP" = "X" && LB_BOOTSTRAP=debootstrap
