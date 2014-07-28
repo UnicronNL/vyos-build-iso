@@ -137,6 +137,10 @@ if test X$BARCH = Xamd64; then
   LB_LINUX_FLAVOURS="amd64-vyos"
   VIRT_FLAVOUR="amd64-vyos"
 fi
+if test X$BARCH = Xarmel; then
+  LB_LINUX_FLAVOURS="armel-vyos"
+  VIRT_FLAVOUR="armel-vyos"
+fi
 
 # user-specified flavor
 AC_ARG_WITH(kernel-flavor,
